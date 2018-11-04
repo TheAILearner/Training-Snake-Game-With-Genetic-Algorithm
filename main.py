@@ -1,9 +1,12 @@
 from Genetic_Algorithm import *
 from Snake_Game import *
 
+# n_x -> no. of input units
+# n_h -> no. of units in hidden layer 1
+# n_h2 -> no. of units in hidden layer 2
+# n_y -> no. of output units
 
 # The population will have sol_per_pop chromosome where each chromosome has num_weights genes.
-
 sol_per_pop = 50
 num_weights = n_x*n_h + n_h*n_h2 + n_h2*n_y
 
