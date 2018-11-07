@@ -2,6 +2,7 @@ from Run_Game import *
 from random import choice, randint
 
 def cal_pop_fitness(pop):
+    # calculating the fitness value by playing a game with the given weights in chromosome
     fitness = []
     for i in range(pop.shape[0]):
         fit = run_game_with_ML(display,clock,pop[i])
@@ -20,13 +21,15 @@ def select_mating_pool(pop, fitness, num_parents):
     return parents
 
 def crossover(parents, offspring_size):
+    # creating children for next generation 
     offspring = np.empty(offspring_size)
-
-    for k in range(offspring_size[0]):
-
+    
+    for k in range(offspring_size[0]): 
+  
         while True:
             parent1_idx = random.randint(0, parents.shape[0] - 1)
             parent2_idx = random.randint(0, parents.shape[0] - 1)
+            # produce offspring from two parents if they are different
             if parent1_idx != parent2_idx:
                 for j in range(offspring_size[1]):
                     if random.uniform(0, 1) < 0.5:
@@ -38,7 +41,8 @@ def crossover(parents, offspring_size):
 
 
 def mutation(offspring_crossover):
-
+    # mutating the offsprings generated from crossover to maintain variation in the population
+    
     for idx in range(offspring_crossover.shape[0]):
         for _ in range(25):
             i = randint(0,offspring_crossover.shape[1]-1)
