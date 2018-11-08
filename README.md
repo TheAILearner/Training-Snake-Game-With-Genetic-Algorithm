@@ -8,5 +8,5 @@ Run_Game.py  -  play snake game using predicted directions from genetic algorith
 
 Genetic_Algorithm.py  -  contains genetic algorithm functions like crossover, mutation etc
 
-Feed_Forward_Neural_Network.py  -  calculates the output feed forward neural network
+Feed_Forward_Neural_Network.py  -  contains the functions for calculating the output from feed forward neural network
 
