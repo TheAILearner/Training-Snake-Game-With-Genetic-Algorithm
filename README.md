@@ -10,3 +10,5 @@ Genetic_Algorithm.py  -  contains genetic algorithm functions like crossover, mu
 
 Feed_Forward_Neural_Network.py  -  contains the functions for calculating the output from feed forward neural network
 
+To know more about algorithm used in this code you can follow this blog https://theailearner.com/2018/11/09/snake-game-with-genetic-algorithm/
+
